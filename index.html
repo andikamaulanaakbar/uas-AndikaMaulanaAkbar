@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Café Digital Nusantara - Home & Facilities</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <style>
+        body { font-family: 'Poppins', sans-serif; background-color: #fffaf5; scroll-behavior: smooth; }
+        .hero-section {
+            background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), 
+                        url('images/herocontent.jpg');
+            background-size: cover; background-position: center;
+        }
+        .section-title { color: #6b4f3b; font-weight: 700; position: relative; display: inline-block; }
+        .section-title::after {
+            content: ""; display: block; width: 40px; height: 3px; background: #009688; margin: 8px auto 0;
+        }
+    </style>
+</head>
+<body>
+
+    <nav class="flex items-center justify-between px-10 py-5 bg-white shadow-sm">
+        <div class="flex items-center gap-2">
+            <span class="text-xl font-bold text-orange-900">☕ Café Digital</span>
+        </div>
+        <div class="hidden md:flex gap-8 text-gray-700 font-medium">
+            <a href="#" class="hover:text-orange-700">Home</a>
+            <a href="#" class="hover:text-orange-700">About</a>
+            <a href="#" class="hover:text-orange-700">Menu</a>
+            <a href="#" class="hover:text-orange-700">Facilities</a>
+            <a href="#" class="hover:text-orange-700">Contact</a>
+        </div>
+        <button class="bg-teal-600 text-white px-5 py-2 rounded-md font-semibold hover:bg-teal-700 transition">
+            Reservasi
+        </button>
+    </nav>
+
+    <header class="hero-section h-[600px] flex flex-col items-center justify-center text-center text-white px-4">
+        <h1 class="text-4xl md:text-6xl font-bold mb-4 drop-shadow-lg">Where Coffee Meets Digital</h1>
+        <p class="text-lg md:text-xl max-w-2xl mb-8 font-light drop-shadow-md">Ruang nyaman untuk ngopi, kerja, dan koneksi digital.</p>
+        <div class="flex gap-4">
+            <a href="#menu" class="bg-[#009688] hover:bg-teal-700 text-white px-8 py-3 rounded-md font-bold transition shadow-lg">Lihat Menu</a>
+            <button class="border-2 border-white hover:bg-white hover:text-black text-white px-8 py-3 rounded-md font-bold transition">Reservasi Sekarang</button>
+        </div>
+    </header>
+
+    <section class="bg-[#6b4f3b] py-12 text-white">
+        <div class="max-w-6xl mx-auto grid grid-cols-3 gap-4 text-center">
+            <div><p class="text-4xl font-bold">2</p><p class="text-xs uppercase opacity-80 mt-2">Cabang</p></div>
+            <div><p class="text-4xl font-bold">5,000+</p><p class="text-xs uppercase opacity-80 mt-2">Pelanggan</p></div>
+            <div><p class="text-4xl font-bold">4.8 <span class="text-yellow-400">★</span></p><p class="text-xs uppercase opacity-80 mt-2">Rating</p></div>
+        </div>
+    </section>
+
+    <section class="max-w-6xl mx-auto py-20 px-6">
+        <div class="text-center mb-12"><h2 class="text-3xl section-title">Our Story</h2></div>
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-start">
+            <div>
+                <p class="text-gray-600 text-sm leading-relaxed mb-6">Café Digital Nusantara lahir dari kecintaan akan kopi dan teknologi. Didirikan pada 2023, kami menggabungkan kualitas kopi premium dengan fasilitas digital lengkap untuk memenuhi kebutuhan generasi milenial dan Gen Z.</p>
+                <h3 class="font-bold text-[#6b4f3b] mb-4">Visi & Misi</h3>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                    <div class="bg-white p-5 rounded-lg shadow-sm border border-gray-100">
+                        <div class="text-[#009688] font-bold mb-2 flex items-center gap-2"><span>👁️</span> Visi</div>
+                        <p class="text-gray-500 text-xs">Menjadi jaringan café digital nomor 1 di Indonesia untuk milenial dan Gen Z.</p>
+                    </div>
+                    <div class="bg-white p-5 rounded-lg shadow-sm border border-gray-100">
+                        <div class="text-[#009688] font-bold mb-2 flex items-center gap-2"><span>🎯</span> Misi</div>
+                        <ul class="text-gray-500 text-[10px] list-disc pl-4 space-y-1">
+                            <li>Menyediakan tempat nyaman untuk nongkrong dan kerja.</li>
+                            <li>Menjaga kualitas kopi premium lokal.</li>
+                            <li>Menyediakan fasilitas digital lengkap.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="rounded-2xl overflow-hidden shadow-xl"><img src="images/G2.jpg" class="w-full h-full object-cover"></div>
+        </div>
+    </section>
+
+    <section id="menu" class="bg-white py-20 px-6">
+        <div class="max-w-6xl mx-auto">
+            <div class="text-center mb-16"><h2 class="text-3xl section-title">Our Menu</h2></div>
+            <h3 class="font-bold text-gray-800 mb-6">Signature Items</h3>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mb-16">
+                <div class="bg-white rounded-xl shadow-md overflow-hidden">
+                    <img src="images/Digital Brew.jpg" class="h-40 w-full object-cover">
+                    <div class="p-4"><h4 class="font-bold text-sm">Digital Brew</h4><p class="text-[#009688] font-bold text-xs mt-1">Rp 35,000</p></div>
+                </div>
+                <div class="bg-white rounded-xl shadow-md overflow-hidden">
+                    <img src="images/tech Burger.jpg" class="h-40 w-full object-cover">
+                    <div class="p-4"><h4 class="font-bold text-sm">Tech Burger</h4><p class="text-[#009688] font-bold text-xs mt-1">Rp 45,000</p></div>
+                </div>
+                <div class="bg-white rounded-xl shadow-md overflow-hidden">
+                    <img src="images/Code Cake.jpg" class="h-40 w-full object-cover">
+                    <div class="p-4"><h4 class="font-bold text-sm">Code Cake</h4><p class="text-[#009688] font-bold text-xs mt-1">Rp 28,000</p></div>
+                </div>
+            </div>
+            <h3 class="font-bold text-gray-800 mb-6">Full Menu</h3>
+            <div class="overflow-x-auto rounded-lg border">
+                <table class="w-full text-left text-xs">
+                    <thead class="bg-[#6b4f3b] text-white">
+                        <tr><th class="p-4">Kategori</th><th class="p-4">Nama Item</th><th class="p-4">Harga</th><th class="p-4">Deskripsi</th><th class="p-4">Keterangan</th></tr>
+                    </thead>
+                    <tbody class="divide-y">
+                        <tr><td class="p-4">Minuman</td><td class="p-4 font-bold">Espresso</td><td class="p-4">Rp 25,000</td><td class="p-4 text-gray-500">Single shot, strong & bold</td><td class="p-4">Hot Only</td></tr>
+                        <tr class="bg-gray-50"><td class="p-4">Minuman</td><td class="p-4 font-bold">Cappuccino</td><td class="p-4">Rp 30,000</td><td class="p-4 text-gray-500">Espresso dengan foam susu</td><td class="p-4">Hot/Ice</td></tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </section>
+
+    <section class="max-w-6xl mx-auto py-20 px-6">
+        <div class="text-center mb-16"><h2 class="text-3xl section-title">Our Facilities</h2></div>
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-start">
+            <div>
+                <h3 class="font-bold text-gray-800 mb-8">Fasilitas Unggulan</h3>
+                <ul class="space-y-6 text-sm text-gray-600">
+                    <li class="flex items-center gap-4"><span class="text-[#009688] text-xl">📶</span> High-speed WiFi (100 Mbps)</li>
+                    <li class="flex items-center gap-4"><span class="text-[#009688] text-xl">📹</span> Meeting Room (kapasitas 10 orang)</li>
+                    <li class="flex items-center gap-4"><span class="text-[#009688] text-xl">🔌</span> Charging Station di setiap meja</li>
+                    <li class="flex items-center gap-4"><span class="text-[#009688] text-xl">🖨️</span> Printing & Scanning Service</li>
+                    <li class="flex items-center gap-4"><span class="text-[#009688] text-xl">☕</span> 24/7 Coffee Service</li>
+                    <li class="flex items-center gap-4"><span class="text-[#009688] text-xl">🅿️</span> Parking Area (motor & mobil)</li>
+                </ul>
+            </div>
+            <div>
+                <h3 class="font-bold text-gray-800 mb-8">Photo Gallery</h3>
+                <div class="grid grid-cols-3 gap-3">
+                    <img src="images/G2.jpg" class="aspect-square rounded-lg object-cover">
+                    <img src="images/G3.jpg" class="aspect-square rounded-lg object-cover">
+                    <img src="images/G4.jpg" class="aspect-square rounded-lg object-cover">
+                    <img src="images/G5.jpg" class="aspect-square rounded-lg object-cover">
+                    <img src="images/G6.jpg" class="aspect-square rounded-lg object-cover">
+                    <img src="images/G7.jpg" class="aspect-square rounded-lg object-cover">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-[#6b4f3b] py-8 text-center text-white/60 text-xs uppercase tracking-widest">
+        &copy; 2026 Café Digital Nusantara. All rights reserved.
+    </footer>
+
+</body>
+</html>
